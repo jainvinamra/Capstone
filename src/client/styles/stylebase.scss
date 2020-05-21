@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Coustard:900&display=swap);
+
+$mobile-margin: 20px;
+$mobile-font-size: 40px;
+$desktop-margin: 5px;
+$desktop-font-size: 20px;
+$desktop-transition: 1000px;
+$travel-lightblue: rgb(204, 251, 255);
+$travel-darkblue: rgb(183, 231, 235);
+$travel-lightgrey: rgb(240, 240, 240);
+$travel-darkgrey: rgb(212, 212, 212);
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  grid-template-areas:
+  "ti"
+  "mn"
+  "ft"
+}

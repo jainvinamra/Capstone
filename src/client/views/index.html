@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Assist</title>
+  </head>
+  <body>
+    <header class="appTitle">
+      <h1>Travel Planner</h1>
+      <summary class="shown" id="tagLine">
+        Keep track of all your upcoming trips in one convenient place.
+        Simply add a city and departure date, and start planning today!
+      </summary>
+    </header>
+    <main>
+      <div id="dropDowns">
+        <button class="dropDown" id="tripList">saved trips</button>
+          <ol class="dropDownContent" id="tripDropDown">
+          </ol>
+        <button class="dropDown active" id="newTrip">add trip</button>
+        <div class="shown" id="tripInputs">
+          <div id="locationInputLabel">My trip to: </div>
+          <input type="text" id="locationInput" placeholder="City, Country">
+          <div id="departureInputLabel">Departing: </div>
+          <input type="text" id="departureInput" placeholder="MM/DD/YYYY">
+          <div id="addButtonSection">
+            <button class="active" id="addButton">
+              <strong>+</strong> add trip
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden" id="tripInfo">
+        <div id="imgPlaceholder">
+          <img id="image" src="../../../importantLogos/placeholder_pic.jpg" alt="placeholder">
+        </div>
+        <div id="lists">
+          <button class="listButton active" id="flightInfo">
+            <strong>+</strong> add flight info
+          </button>
+          <button class="listButton active" id="lodgingInfo">
+            <strong>+</strong> add lodging info
+          </button>
+          <button class="listButton active" id="packingList">
+            <strong>+</strong> add packing list
+          </button>
+          <button class="listButton active" id="notes">
+            <strong>+</strong> add notes
+          </button>
+        </div>
+        <div id="cityDate">
+          <div id="locationLabel">My trip to: </div>
+          <div id="location">City, Country</div>
+          <div id="departureLabel">Departing: </div>
+          <div id="departure">MM/DD/YYYY</div>
+        </div>
+        <div id="saveRemoveButtons">
+          <button class="active saveRemove" id="saveButton">save trip</button>
+          <button class="disabled saveRemove" id="removeButton">remove trip</button>
+        </div>
+        <div id="detailsPlaceholder">
+          <p id="tripTiming">Paris, France is 220 days away</p>
+          <p id="tripWeather">Typical weather for then is:</p>
+          <ul id="weatherDetails">
+            <li>High/Low</li>
+            <li>Weather conditions are</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by titusurya - www.freepik.com</a>
+    </footer>
+  </body>
+</html>

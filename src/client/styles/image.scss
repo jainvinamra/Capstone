@@ -1,0 +1,19 @@
+@import 'stylebase';
+
+#imgPlaceholder{
+  grid-area: pc;
+}
+
+#image {
+  max-height: 640px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $desktop-transition) {
+  #image {
+    width: 650px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+  }
+}

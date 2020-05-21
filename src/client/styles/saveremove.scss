@@ -1,0 +1,53 @@
+@import 'stylebase';
+
+#saveRemoveButtons {
+  grid-area: sr;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.saveRemove {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  height: 100px;
+  width: 300px;
+  padding: 0px;
+  border-width: 8px;
+  border-style: solid;
+  font-family: inherit;
+  outline: none;
+  font-size: $mobile-font-size;
+}
+
+button.active {
+  border-color: black;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+button.active:hover {
+  background-color: rgba(245, 245, 245, 0.829);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+button.active:active {
+  background-color: rgb(200, 200, 200);
+  box-shadow: none;
+  }
+
+button.disabled {
+  border-color: lightgrey;
+  color: grey;
+  cursor: auto;
+}
+
+@media (min-width: $desktop-transition) {
+  #saveRemoveButtons {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

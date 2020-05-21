@@ -1,0 +1,25 @@
+@import 'stylebase';
+
+header {
+  grid-area: ti;
+  font-size: 50px;
+  margin-left: $mobile-margin;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+#tagLine.shown {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 80px;
+}
+
+#tagLine.hidden {
+  display: none;
+}

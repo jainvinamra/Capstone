@@ -1,0 +1,27 @@
+@import 'stylebase';
+
+#tripInfo.shown {
+  grid-area: ti;
+  background-color: $travel-lightblue;
+  display: grid;
+  grid-template-areas:
+  "pc"
+  "cd"
+  "sr"
+  "de"
+  "li";
+}
+
+#tripInfo.hidden {
+  display: none;
+}
+
+@media (min-width: $desktop-transition) {
+  #tripInfo.shown {
+    grid-template-columns: 700px 1fr;
+    grid-template-areas:
+    "pc cd"
+    "pc sr"
+    "li de";
+  }
+}

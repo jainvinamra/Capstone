@@ -1,0 +1,117 @@
+@import 'stylebase';
+
+#dropDowns {
+  grid-area: dd;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-areas:
+  "sa ad"
+  "dd dd"
+}
+
+#tripList {
+  grid-area: sa;
+  text-align: left;
+  cursor: pointer;
+  padding: $mobile-margin;
+}
+
+#newTrip {
+  grid-area: ad;
+  text-align: right;
+  cursor: pointer;
+  padding: $mobile-margin;
+}
+
+#tripInputs.shown {
+  grid-area: dd;
+  padding: $mobile-margin;
+  background-color: $travel-darkgrey;
+  font-family: 'Coustard', serif;
+  font-size: $mobile-font-size;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "lil li"
+  "dil di"
+  "ab ab"
+}
+
+#locationInputLabel {
+  grid-area: lil;
+  text-align: right;
+}
+
+#locationInput {
+  grid-area: li;
+}
+
+#departureInputLabel {
+  grid-area: dil;
+  text-align: right;
+}
+
+#departureInput {
+  grid-area: di;
+}
+
+#tripInputs.hidden {
+  display: none;
+}
+
+#addButtonSection {
+  grid-area: ab;
+  display: flex;
+  justify-content: center;
+}
+
+#addButton.active {
+  font-size: $mobile-font-size;
+  border: 8px solid black;
+  border-radius: 40px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+}
+
+.dropDown {
+  border: none;
+  background-color: $travel-lightgrey;
+  margin: 0px;
+  outline: none;
+  font-family: inherit;
+  font-size: $mobile-font-size;
+}
+
+.dropDown:hover {
+  background-color: $travel-darkgrey;
+}
+
+.dropDown.active {
+  background-color: $travel-darkgrey;
+}
+
+.dropDownContent {
+  margin: 0px;
+  background-color: $travel-darkgrey;
+}
+
+.tripDropDown {
+  visibility: hidden;
+}
+
+.addDropDown {
+  visibility: hidden;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  min-width: 5px;
+  padding: 0px;
+}
+

@@ -1,0 +1,35 @@
+@import 'stylebase';
+
+ul {
+  font-size: 16px;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#detailsPlaceholder {
+  grid-area: de;
+  min-height: 200px;
+  font-size: $mobile-font-size;
+  margin-left: $mobile-margin;
+}
+
+#tripWeather {
+  margin-bottom: 0px;
+}
+
+
+
+@media (min-width: $desktop-transition) {
+  #tripTiming {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  };
+  #tripWeather {
+    margin-top: 10px;
+  }
+}
